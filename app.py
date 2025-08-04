@@ -8,12 +8,12 @@ import pandas as pd
 
 # Load environment variables
 load_dotenv()
-APCA_API_KEY_ID = os.getenv("PKTLY0I42V66RGJO36WM")
-APCA_API_SECRET_KEY = os.getenv("x8dMaTGxYRwCN3TzQaNX5YH1WryRG8mE0JAjQ7Nl")
-APCA_API_BASE_URL = os.getenv("https://paper-api.alpaca.markets")
+API_KEY = st.secrets["APCA_API_KEY_ID"]
+API_SECRET = st.secrets["APCA_API_SECRET_KEY"]
+BASE_URL = st.secrets["APCA_API_BASE_URL"]
 
 # Initialize API
-api = REST(APCA_API_KEY_ID, APCA_API_SECRET_KEY, APCA_API_BASE_URL)
+api = REST(API_KEY, API_SECRET, BASE_URL)
 
 
 # Set Streamlit UI layout
