@@ -8,9 +8,9 @@ import pandas as pd
 
 # Load environment variables
 load_dotenv()
-APCA_API_KEY_ID = ("PKTLY0I42V66RGJO36WM")
-APCA_API_SECRET_KEY = ("x8dMaTGxYRwCN3TzQaNX5YH1WryRG8mE0JAjQ7Nl")
-APCA_API_BASE_URL = ("https://paper-api.alpaca.markets")
+APCA_API_KEY_ID = os.getenv("PKTLY0I42V66RGJO36WM")
+APCA_API_SECRET_KEY = os.getenv("x8dMaTGxYRwCN3TzQaNX5YH1WryRG8mE0JAjQ7Nl")
+APCA_API_BASE_URL = os.getenv("https://paper-api.alpaca.markets")
 
 # Initialize API
 api = REST(API_KEY, API_SECRET, BASE_URL)
