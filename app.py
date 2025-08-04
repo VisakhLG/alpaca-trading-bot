@@ -8,9 +8,9 @@ import pandas as pd
 
 # Load environment variables
 load_dotenv()
-API_KEY = os.getenv("ALPACA_API_KEY")
-API_SECRET = os.getenv("ALPACA_SECRET_KEY")
-BASE_URL = os.getenv("ALPACA_BASE_URL")
+API_KEY = os.getenv("APCA_API_KEY")
+API_SECRET = os.getenv("APCA_SECRET_KEY")
+BASE_URL = os.getenv("APCA_BASE_URL")
 
 # Initialize API
 api = REST(API_KEY, API_SECRET, BASE_URL)
