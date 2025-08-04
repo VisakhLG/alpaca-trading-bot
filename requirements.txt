@@ -1,0 +1,7 @@
+streamlit
+python-dotenv
+alpaca-trade-api
+yfinance
+pandas
+requests
+
