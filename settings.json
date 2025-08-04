@@ -1,0 +1,17 @@
+{
+  "strategy": "ma_rsi_combo",
+  "fast_ma": 5,
+  "slow_ma": 20,
+  "rsi_period": 14,
+  "rsi_buy": 30,
+  "rsi_sell": 70,
+  "bollinger_window": 20,
+  "bollinger_std_dev": 2,
+  "bollinger_rsi_thresh": 35,
+  "pairs": {
+    "symbols": ["AAPL", "MSFT"],
+    "lookback_days": 15,
+    "entry_zscore": 2.0,
+    "exit_zscore": 0.5
+  }
+}
