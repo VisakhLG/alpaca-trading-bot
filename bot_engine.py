@@ -21,9 +21,9 @@ if not is_market_open():
 
 # --- Load Environment Variables ---
 load_dotenv()
-API_KEY = os.getenv("ALPACA_API_KEY")
-API_SECRET = os.getenv("ALPACA_SECRET_KEY")
-BASE_URL = os.getenv("ALPACA_BASE_URL")
+API_KEY = os.getenv("APCA_API_KEY")
+API_SECRET = os.getenv("APCA_SECRET_KEY")
+BASE_URL = os.getenv("APCA_BASE_URL")
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 
