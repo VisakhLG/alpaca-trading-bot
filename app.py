@@ -13,7 +13,8 @@ APCA_API_SECRET_KEY = os.getenv("x8dMaTGxYRwCN3TzQaNX5YH1WryRG8mE0JAjQ7Nl")
 APCA_API_BASE_URL = os.getenv("https://paper-api.alpaca.markets")
 
 # Initialize API
-api = REST(API_KEY, API_SECRET, BASE_URL)
+api = REST(APCA_API_KEY_ID, APCA_API_SECRET_KEY, APCA_API_BASE_URL)
+
 
 # Set Streamlit UI layout
 st.set_page_config(page_title="Alpaca Trading Bot", layout="wide")
